@@ -1,0 +1,19 @@
+{% load static %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <img align="center" src="{% static 'images/uop.png' %}">
+</head>
+<body>
+{% block content %}
+<input type="text" name="name"> Name:
+{name}
+
+
+{% endblock content %}
+
+
+</body>
+</html>

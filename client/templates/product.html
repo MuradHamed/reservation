@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+    <title>Add Product</title>
+</head>
+<body>
+    <h1>Add Product Page</h1>
+    <form method="post" action="{% url 'addproduct' %}">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Add Product</button>
+    </form>
+</body>
+</html>
